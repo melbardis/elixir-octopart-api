@@ -27,4 +27,10 @@ use Mix.Config
 # Configuration from the imported file will override the ones defined
 # here (which is why it is important to import them last).
 #
-#     import_config "#{Mix.env()}.exs"
+# import_config "#{Mix.env()}.exs"
+
+config :logger, backends: [:console]
+
+config :logger, :console,
+  format: "\n$time $metadata[$level] $levelpad$message\n",
+  metadata: [:user_id, :module, :line]

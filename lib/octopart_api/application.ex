@@ -8,6 +8,7 @@ defmodule OctopartApi.Application do
   def start(_type, _args) do
     # List all child processes to be supervised
     children = [
+      OctopartApi.RateServer
       # Starts a worker by calling: OctopartApi.Worker.start_link(arg)
       # {OctopartApi.Worker, arg},
     ]

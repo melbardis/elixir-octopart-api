@@ -48,8 +48,6 @@ defmodule OctopartApi.RateServer do
     The request is enqued on the request que 'que:'.
   """
   def handle_call({req, query_string}, from, %{que: curQ} = state) do
-    Logger.debug(:io_lib.format("handle_call: req: ~w from: ~w state=~w", [req, from, state]))
-
     new_state =
       doRequest(%{state | que: List.insert_at(curQ, -1, %{req: req, from: from, q: query_string})})
 

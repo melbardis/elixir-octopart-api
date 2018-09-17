@@ -1,0 +1,4281 @@
+Compiling 1 file (.ex)
+
+14:27:07.170 module=OctopartApi.RateServer line=13 [debug] start_link
+
+OctopartApiExamples
+  * test example /parts/get_multi
+14:27:07.329 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.253.0>,#Ref<0.2451773151.210239489.137925>} state=#{count=>0,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/parts/get_multi?apikey=bfec2a00&uid[]=103cdb613d20cffb&uid[]=2a68e3620f0cf5af"
+
+
+-------------------------------------------
+: %{
+  "103cdb613d20cffb" => %{
+    "__class__" => "Part",
+    "brand" => %{
+      "__class__" => "Brand",
+      "homepage_url" => "http://www.te.com/",
+      "name" => "TE Connectivity",
+      "uid" => "c4f105fbe7591336"
+    },
+    "manufacturer" => %{
+      "__class__" => "Manufacturer",
+      "homepage_url" => "http://www.te.com/",
+      "name" => "TE Connectivity",
+      "uid" => "b53d7037929566fa"
+    },
+    "mpn" => "206062-1",
+    "octopart_url" => "https://octopart.com/206062-1-te+connectivity-46668526",
+    "offers" => [
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "3152_206062-1",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 0,
+        "is_authorized" => true,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-13T00:02:41Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0c53fe5&sid=8915&ppid=46668526&vpid=165906826&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.powerandsignal.com",
+          "id" => "3152",
+          "name" => "Power and Signal Group",
+          "uid" => "2e73eb790b45fdb4"
+        },
+        "sku" => "206062-1"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "6561_206062-1",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 1,
+        "is_authorized" => false,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-05T16:05:49Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{"USD" => [[1, "3.84615"]]},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0b44986&sid=17279&ppid=46668526&vpid=158521927&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "CA",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.componentonline.com",
+          "id" => "6561",
+          "name" => "Component Electronics",
+          "uid" => "bfc17acb8f066c06"
+        },
+        "sku" => "206062-1"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "4293_206062-1",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 9,
+        "is_authorized" => false,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-12T14:56:58Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=057b03f&sid=13909&ppid=46668526&vpid=166406495&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => false,
+          "homepage_url" => "http://www.nstechnology.com",
+          "id" => "4293",
+          "name" => "NetSource Technology",
+          "uid" => "6d39a833549abefe"
+        },
+        "sku" => "206062-1"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "3917_206062-1",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 2,
+        "is_authorized" => false,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-12T18:30:22Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{"USD" => [[1, "1.87720"]]},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=03edda6&sid=13062&ppid=46668526&vpid=128077910&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://rcfreelance.com/",
+          "id" => "3917",
+          "name" => "Freelance Electronics",
+          "uid" => "a1fc64f687d7723b"
+        },
+        "sku" => "206062-1"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "3561_206062-1",
+        "eligible_region" => "",
+        "factory_lead_days" => 495,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 100,
+        "is_authorized" => false,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T19:03:52Z",
+        "moq" => 1,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => 1,
+        "packaging" => nil,
+        "prices" => %{},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=022769b&sid=11310&ppid=46668526&vpid=476459695&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.nacsemi.com",
+          "id" => "3561",
+          "name" => "NAC Semi",
+          "uid" => "d7281222f3a704ef"
+        },
+        "sku" => "206062-1"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "2412_206062-1",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 1,
+        "is_authorized" => false,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T19:09:53Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{"USD" => [[1, "3.75000"]]},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=061e9c1&sid=2412&ppid=46668526&vpid=176280934&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.questcomp.com",
+          "id" => "2412",
+          "name" => "Quest",
+          "uid" => "b29977939293615e"
+        },
+        "sku" => "206062-1"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "2409_206062-1",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 2,
+        "is_authorized" => false,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T10:36:58Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0548aac&sid=2409&ppid=46668526&vpid=260645807&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.gerberelec.com",
+          "id" => "2409",
+          "name" => "Gerber",
+          "uid" => "e145244fc14a3282"
+        },
+        "sku" => "206062-1"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "10079_206062-1",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 0,
+        "is_authorized" => false,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-14T13:51:07Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=02f9433&sid=25917&ppid=46668526&vpid=195702226&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => false,
+          "homepage_url" => "http://www.abacuselect.com/",
+          "id" => "10079",
+          "name" => "Abacus Technologies",
+          "uid" => "ab926e98a5ab7855"
+        },
+        "sku" => "206062-1"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "4025_206062-1",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 3,
+        "is_authorized" => false,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-14T21:39:57Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => "https://octopart.com/rfq/generate?ppid=46668526&vpid=137936105",
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=08e446f&sid=13388&ppid=46668526&vpid=137936105&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => false,
+          "homepage_url" => "http://www.4starelectronics.com/?utm_source=octopart&utm_medium=inventory&utm_campaign=Octopart",
+          "id" => "4025",
+          "name" => "4 Star Electronics",
+          "uid" => "99755c7fbfaa4ab2"
+        },
+        "sku" => "206062-1"
+      }
+    ],
+    "redirected_uids" => ["103cdb613d20cffb", "21adea61df94fe6a",
+     "6d83a643be72b244", "82bc4bb6a7db5d7b", "eac6207ddf823501"],
+    "uid" => "bd4d768f82c5628a"
+  },
+  "2a68e3620f0cf5af" => %{
+    "__class__" => "Part",
+    "brand" => %{
+      "__class__" => "Brand",
+      "homepage_url" => nil,
+      "name" => "Amphenol",
+      "uid" => "4da98ca360d79a6e"
+    },
+    "manufacturer" => %{
+      "__class__" => "Manufacturer",
+      "homepage_url" => nil,
+      "name" => "Amphenol",
+      "uid" => "5b0c9e06727288cb"
+    },
+    "mpn" => "97-3106A-14S(0850)",
+    "octopart_url" => "https://octopart.com/97-3106a-14s%280850%29-amphenol-2",
+    "offers" => [
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{
+          "item_id" => "V90:2381_07459653",
+          "source_code" => "ACNA"
+        },
+        "_naive_id" => "1106_97-3106A-14S(0850)",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 356,
+        "is_authorized" => true,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T14:18:29Z",
+        "moq" => 1,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => 1,
+        "packaging" => nil,
+        "prices" => %{
+          "USD" => [
+            [1, "7.58200"],
+            [10, "6.22900"],
+            [25, "5.85200"],
+            [100, "5.71300"]
+          ]
+        },
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0390354&sid=1106&ppid=2&vpid=473101179&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.arrownac.com/",
+          "id" => "1106",
+          "name" => "Arrow Electronics, Inc.",
+          "uid" => "9d5b5851b06f4e9c"
+        },
+        "sku" => "97-3106A-14S(0850)"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "2617_97-3106A-14S(0850)",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 356,
+        "is_authorized" => true,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T17:42:21Z",
+        "moq" => 1,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{
+          "USD" => [[1, "7.58200"], [10, "6.22900"], [25, "5.85200"]]
+        },
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0df8281&sid=5489&ppid=2&vpid=459595838&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.verical.com",
+          "id" => "2617",
+          "name" => "Verical",
+          "uid" => "504e954473118389"
+        },
+        "sku" => "97-3106A-14S(0850)"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "2594_97-3106A-14S(0850)",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 306,
+        "is_authorized" => true,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T17:11:12Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{
+          "USD" => [
+            [1, "7.16000"],
+            [10, "6.44000"],
+            [50, "5.78000"],
+            [100, "5.24000"]
+          ]
+        },
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0fc4f75&sid=5048&ppid=2&vpid=16260005&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://ee-usa.com/",
+          "id" => "2594",
+          "name" => "Electronic Expeditors",
+          "uid" => "3e6cfb661d28edab"
+        },
+        "sku" => "97-3106A-14S(0850)"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "2429_97-3106A-14S(0850)",
+        "eligible_region" => "",
+        "factory_lead_days" => 12,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 191,
+        "is_authorized" => true,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T11:02:42Z",
+        "moq" => 1,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => "2018-11-05T00:00:00Z",
+        "on_order_quantity" => 500,
+        "order_multiple" => nil,
+        "packaging" => "Bulk",
+        "prices" => %{
+          "USD" => [
+            [1, "6.76000"],
+            [25, "6.42000"],
+            [82, "6.10000"],
+            [100, "5.40000"],
+            [500, "5.12000"],
+            [1000, "4.65000"]
+          ]
+        },
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0a79a4c&sid=2429&ppid=2&vpid=190914270&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.onlinecomponents.com",
+          "id" => "2429",
+          "name" => "Onlinecomponents.com",
+          "uid" => "e3fd26f7c3e6303a"
+        },
+        "sku" => "97-3106A-14S(0850)"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "2591_97-3106A-14S(0850)",
+        "eligible_region" => "",
+        "factory_lead_days" => 12,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 191,
+        "is_authorized" => true,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T08:40:17Z",
+        "moq" => 1,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => "2018-11-05T00:00:00Z",
+        "on_order_quantity" => 500,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{
+          "USD" => [
+            [1, "6.76000"],
+            [25, "6.42000"],
+            [82, "6.10000"],
+            [100, "5.40000"],
+            [500, "5.12000"],
+            [1000, "4.65000"]
+          ]
+        },
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=08c80b9&sid=2595&ppid=2&vpid=421484811&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://masterdistributors.com/",
+          "id" => "2591",
+          "name" => "Master Electronics",
+          "uid" => "2f93ea990ceafc54"
+        },
+        "sku" => "97-3106A-14S(0850)"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "3261_8723742",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 34,
+        "is_authorized" => true,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T11:32:37Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0963370&sid=10022&ppid=2&vpid=267533336&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "GB",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.rs-components.com",
+          "id" => "3261",
+          "name" => "RS Components",
+          "uid" => "fbaa3ea0de71286d"
+        },
+        "sku" => "8723742"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "4042_973106A14S0850",
+        "eligible_region" => "",
+        "factory_lead_days" => 12,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 191,
+        "is_authorized" => true,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-17T08:07:40Z",
+        "moq" => 1,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => nil,
+        "on_order_eta" => "2018-11-05T00:00:00Z",
+        "on_order_quantity" => 500,
+        "order_multiple" => 0,
+        "packaging" => nil,
+        "prices" => %{
+          "USD" => [
+            [1, "7.16560"],
+            [25, "6.80520"],
+            [82, "6.46600"],
+            [100, "5.72400"],
+            [500, "5.42720"],
+            [1000, "4.92900"]
+          ]
+        },
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0de6739&sid=13420&ppid=2&vpid=148947593&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "CA",
+          "has_ecommerce" => true,
+          "homepage_url" => "http://www.e-sonic.com/",
+          "id" => "4042",
+          "name" => "Electro Sonic",
+          "uid" => "3405f10f12a9e7c2"
+        },
+        "sku" => "973106A14S0850"
+      },
+      %{
+        "__class__" => "PartOffer",
+        "_custom" => %{},
+        "_naive_id" => "4025_97-3106A-14S(0850)",
+        "eligible_region" => "",
+        "factory_lead_days" => nil,
+        "factory_order_multiple" => nil,
+        "in_stock_quantity" => 4,
+        "is_authorized" => false,
+        "is_realtime" => false,
+        "last_updated" => "2018-09-14T21:39:57Z",
+        "moq" => nil,
+        "multipack_quantity" => nil,
+        "octopart_rfq_url" => "https://octopart.com/rfq/generate?ppid=2&vpid=450398536",
+        "on_order_eta" => nil,
+        "on_order_quantity" => nil,
+        "order_multiple" => nil,
+        "packaging" => nil,
+        "prices" => %{},
+        "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0d5d440&sid=13388&ppid=2&vpid=450398536&ct=offers",
+        "seller" => %{
+          "__class__" => "Seller",
+          "display_flag" => "US",
+          "has_ecommerce" => false,
+          "homepage_url" => "http://www.4starelectronics.com/?utm_source=octopart&utm_medium=inventory&utm_campaign=Octopart",
+          "id" => "4025",
+          "name" => "4 Star Electronics",
+          "uid" => "99755c7fbfaa4ab2"
+        },
+        "sku" => "97-3106A-14S(0850)"
+      }
+    ],
+    "redirected_uids" => [],
+    "uid" => "2a68e3620f0cf5af"
+  }
+}
+  * test example /parts/get_multi (468.0ms)
+  * test example /categories/uid
+14:27:07.775 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.257.0>,#Ref<0.2451773151.210239489.137938>} state=#{count=>1,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/categories/87a44aaeb6be5c63?apikey=bfec2a00"
+
+
+-------------------------------------------
+: %{
+  "__class__" => "Category",
+  "ancestor_names" => ["Electronic Parts", "Discrete Semiconductors"],
+  "ancestor_uids" => ["8a1e4714bb3951d9", "3b27f62d0a3ae0e0"],
+  "children_uids" => ["d1b41cbee0af0a73", "c85a0550f9be139d",
+   "a3416e4b92a47886"],
+  "name" => "Diodes",
+  "num_parts" => 132613,
+  "parent_uid" => "3b27f62d0a3ae0e0",
+  "uid" => "87a44aaeb6be5c63"
+}
+  * test example /categories/uid (94.0ms)
+  * test example /sellers/search
+14:27:07.878 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.258.0>,#Ref<0.2451773151.210239489.137951>} state=#{count=>2,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/sellers/search?apikey=bfec2a00&q=newark&start=0&limit=5"
+
+
+-------------------------------------------
+: %{
+  "__class__" => "SearchResponse",
+  "facet_results" => %{"fields" => %{}, "queries" => %{}},
+  "hits" => 1,
+  "msec" => 16,
+  "request" => %{
+    "__class__" => "SearchRequest",
+    "facet" => %{"fields" => %{}, "queries" => []},
+    "filter" => %{"fields" => %{}, "queries" => []},
+    "limit" => 5,
+    "q" => "newark",
+    "sortby" => "score desc",
+    "start" => 0,
+    "stats" => %{}
+  },
+  "results" => [
+    %{
+      "__class__" => "SearchResult",
+      "item" => %{
+        "__class__" => "Seller",
+        "display_flag" => "US",
+        "has_ecommerce" => true,
+        "homepage_url" => "http://www.newark.com",
+        "id" => "2402",
+        "name" => "Newark",
+        "uid" => "d294179ef2900153"
+      },
+      "snippet" => nil
+    }
+  ],
+  "spec_metadata" => %{},
+  "stats_results" => %{}
+}
+  * test example /sellers/search (109.0ms)
+  * test example /categories/get_multi
+14:27:07.986 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.259.0>,#Ref<0.2451773151.210239494.134382>} state=#{count=>3,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/categories/get_multi?apikey=bfec2a00&uid[]=3b27f62d0a3ae0e0&uid[]=9e07530daf1645c0"
+
+
+-------------------------------------------
+: %{
+  "3b27f62d0a3ae0e0" => %{
+    "__class__" => "Category",
+    "ancestor_names" => ["Electronic Parts"],
+    "ancestor_uids" => ["8a1e4714bb3951d9"],
+    "children_uids" => ["87a44aaeb6be5c63", "d77d1a77e69f0cba",
+     "4c0981037dfc97ce"],
+    "name" => "Discrete Semiconductors",
+    "num_parts" => 234438,
+    "parent_uid" => "8a1e4714bb3951d9",
+    "uid" => "3b27f62d0a3ae0e0"
+  },
+  "9e07530daf1645c0" => %{
+    "__class__" => "Category",
+    "ancestor_names" => ["Electronic Parts"],
+    "ancestor_uids" => ["8a1e4714bb3951d9"],
+    "children_uids" => ["d1a21ca8e0bc0a65", "08b8c5b23945d37f",
+     "bec473ce8f066503", "8436493cb5fb5ff1", "9e37533dafe045f0",
+     "0542c84834e1de85", "56439b4967f48d84", "82584f52b3df599f",
+     "2fc5e2cf1b85f402"],
+    "name" => "Integrated Circuits (ICs)",
+    "num_parts" => 879460,
+    "parent_uid" => "8a1e4714bb3951d9",
+    "uid" => "9e07530daf1645c0"
+  }
+}
+  * test example /categories/get_multi (1326.0ms)
+  * test example /sellers/uid
+14:27:09.308 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.260.0>,#Ref<0.2451773151.210239494.134429>} state=#{count=>0,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/sellers/d294179ef2900153?apikey=bfec2a00"
+
+
+-------------------------------------------
+: %{
+  "__class__" => "Seller",
+  "display_flag" => "US",
+  "has_ecommerce" => true,
+  "homepage_url" => "http://www.newark.com",
+  "id" => "2402",
+  "name" => "Newark",
+  "uid" => "d294179ef2900153"
+}
+  * test example /sellers/uid (94.0ms)
+  * test example /parts/search
+14:27:09.408 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.261.0>,#Ref<0.2451773151.210239494.134474>} state=#{count=>1,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/parts/search?apikey=bfec2a00&q=solid%20state%20relay&filter[fields][brand.name]=Texas%20Instruments&filter[fields][offers.seller.name]=Digi-Key&start=0"
+
+
+-------------------------------------------
+: %{
+  "__class__" => "SearchResponse",
+  "facet_results" => %{"fields" => %{}, "queries" => %{}},
+  "hits" => 0,
+  "msec" => 283,
+  "request" => %{
+    "__class__" => "SearchRequest",
+    "facet" => %{"fields" => %{}, "queries" => []},
+    "filter" => %{
+      "fields" => %{
+        "brand.name" => ["Texas Instruments"],
+        "offers.seller.name" => ["Digi-Key"]
+      },
+      "queries" => []
+    },
+    "limit" => 10,
+    "q" => "solid state relay",
+    "sortby" => "score desc",
+    "start" => 0,
+    "stats" => %{}
+  },
+  "results" => [],
+  "spec_metadata" => %{},
+  "stats_results" => %{},
+  "user_country" => "US",
+  "user_currency" => "USD"
+}
+  * test example /parts/search (390.0ms)
+  * test example /sellers/get_multi
+14:27:09.798 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.262.0>,#Ref<0.2451773151.210239494.134519>} state=#{count=>2,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/sellers/get_multi?apikey=bfec2a00&uid[]=d294179ef2900153&uid[]=2c3be9310496fffc"
+
+
+-------------------------------------------
+: %{
+  "2c3be9310496fffc" => %{
+    "__class__" => "Seller",
+    "display_flag" => "US",
+    "has_ecommerce" => true,
+    "homepage_url" => "http://www.digikey.com",
+    "id" => "459",
+    "name" => "Digi-Key",
+    "uid" => "2c3be9310496fffc"
+  },
+  "d294179ef2900153" => %{
+    "__class__" => "Seller",
+    "display_flag" => "US",
+    "has_ecommerce" => true,
+    "homepage_url" => "http://www.newark.com",
+    "id" => "2402",
+    "name" => "Newark",
+    "uid" => "d294179ef2900153"
+  }
+}
+  * test example /sellers/get_multi (109.0ms)
+  * test example /brands/search
+14:27:09.895 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.263.0>,#Ref<0.2451773151.210239494.134564>} state=#{count=>3,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/brands/search?apikey=bfec2a00&q=texas&start=0&limit=5"
+
+
+-------------------------------------------
+: %{
+  "__class__" => "SearchResponse",
+  "facet_results" => %{"fields" => %{}, "queries" => %{}},
+  "hits" => 7,
+  "msec" => 17,
+  "request" => %{
+    "__class__" => "SearchRequest",
+    "facet" => %{"fields" => %{}, "queries" => []},
+    "filter" => %{"fields" => %{}, "queries" => []},
+    "limit" => 5,
+    "q" => "texas",
+    "sortby" => "score desc",
+    "start" => 0,
+    "stats" => %{}
+  },
+  "results" => [
+    %{
+      "__class__" => "SearchResult",
+      "item" => %{
+        "__class__" => "Brand",
+        "homepage_url" => "http://ti.com",
+        "name" => "Texas Instruments",
+        "uid" => "2239e3330e2df5fe"
+      },
+      "snippet" => nil
+    },
+    %{
+      "__class__" => "SearchResult",
+      "item" => %{
+        "__class__" => "Brand",
+        "homepage_url" => nil,
+        "name" => "TAOS",
+        "uid" => "f9ba38b0d60f2e7d"
+      },
+      "snippet" => nil
+    },
+    %{
+      "__class__" => "SearchResult",
+      "item" => %{
+        "__class__" => "Brand",
+        "homepage_url" => "http://klixon.com/",
+        "name" => "Klixon",
+        "uid" => "e9af28a5c8b83e68"
+      },
+      "snippet" => nil
+    },
+    %{
+      "__class__" => "SearchResult",
+      "item" => %{
+        "__class__" => "Brand",
+        "homepage_url" => nil,
+        "name" => "Burr Brown",
+        "uid" => "56b297b87fa88175"
+      },
+      "snippet" => nil
+    },
+    %{
+      "__class__" => "SearchResult",
+      "item" => %{
+        "__class__" => "Brand",
+        "homepage_url" => nil,
+        "name" => "Nextgen",
+        "uid" => "56b197bb78ab8176"
+      },
+      "snippet" => nil
+    }
+  ],
+  "spec_metadata" => %{},
+  "stats_results" => %{}
+}
+  * test example /brands/search (1607.0ms)
+  * test example /categories/search
+14:27:11.508 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.264.0>,#Ref<0.2451773151.210239494.134612>} state=#{count=>0,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/categories/search?apikey=bfec2a00&q=semiconductors&start=0&limit=5"
+
+
+-------------------------------------------
+: %{
+  "__class__" => "SearchResponse",
+  "facet_results" => %{"fields" => %{}, "queries" => %{}},
+  "hits" => 3,
+  "msec" => 13,
+  "request" => %{
+    "__class__" => "SearchRequest",
+    "facet" => %{"fields" => %{}, "queries" => []},
+    "filter" => %{"fields" => %{}, "queries" => []},
+    "limit" => 5,
+    "q" => "semiconductors",
+    "sortby" => "score desc",
+    "start" => 0,
+    "stats" => %{}
+  },
+  "results" => [
+    %{
+      "__class__" => "SearchResult",
+      "item" => %{
+        "__class__" => "Category",
+        "ancestor_names" => ["Electronic Parts"],
+        "ancestor_uids" => ["8a1e4714bb3951d9"],
+        "children_uids" => ["87a44aaeb6be5c63", "d77d1a77e69f0cba",
+         "4c0981037dfc97ce"],
+        "name" => "Discrete Semiconductors",
+        "num_parts" => 234438,
+        "parent_uid" => "8a1e4714bb3951d9",
+        "uid" => "3b27f62d0a3ae0e0"
+      },
+      "snippet" => nil
+    },
+    %{
+      "__class__" => "SearchResult",
+      "item" => %{
+        "__class__" => "Category",
+        "ancestor_names" => ["Electronic Parts", "Integrated Circuits (ICs)"],
+        "ancestor_uids" => ["8a1e4714bb3951d9", "9e07530daf1645c0"],
+        "children_uids" => ["f7623a68c6e12ca5", "dcf011faed700737",
+         "efe122ebd61d3426", "6b66a66c52c2b0a1"],
+        "name" => "RF Semiconductors and Devices",
+        "num_parts" => 32979,
+        "parent_uid" => "9e07530daf1645c0",
+        "uid" => "82584f52b3df599f"
+      },
+      "snippet" => nil
+    },
+    %{
+      "__class__" => "SearchResult",
+      "item" => %{
+        "__class__" => "Category",
+        "ancestor_names" => ["Electronic Parts"],
+        "ancestor_uids" => ["8a1e4714bb3951d9"],
+        "children_uids" => ["d1a21ca8e0bc0a65", "08b8c5b23945d37f",
+         "bec473ce8f066503", "8436493cb5fb5ff1", "9e37533dafe045f0",
+         "0542c84834e1de85", "56439b4967f48d84", "82584f52b3df599f",
+         "2fc5e2cf1b85f402"],
+        "name" => "Integrated Circuits (ICs)",
+        "num_parts" => 879460,
+        "parent_uid" => "8a1e4714bb3951d9",
+        "uid" => "9e07530daf1645c0"
+      },
+      "snippet" => nil
+    }
+  ],
+  "spec_metadata" => %{},
+  "stats_results" => %{}
+}
+  * test example /categories/search (109.0ms)
+  * test example /parts/match
+14:27:11.628 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.265.0>,#Ref<0.2451773151.210239494.134668>} state=#{count=>1,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/parts/match?apikey=bfec2a00&queries=[%7B%22reference%22:%22line1%22,%22mpn%22:%22SN74S74N%22%7D,%7B%22sku%22:%2267K1122%22,%22reference%22:%22line2%22%7D,%7B%22reference%22:%22line3%22,%22mpn_or_sku%22:%22SN74S74N%22%7D,%7B%22reference%22:%22line4%22,%22mpn%22:%22SN74S74N%22,%22brand%22:%22Texas%20Instruments%22%7D]"
+
+
+-------------------------------------------
+: %{
+  "__class__" => "PartsMatchResponse",
+  "msec" => 167,
+  "request" => %{
+    "__class__" => "PartsMatchRequest",
+    "exact_only" => false,
+    "queries" => [
+      %{
+        "__class__" => "PartsMatchQuery",
+        "brand" => nil,
+        "limit" => 3,
+        "mpn" => "SN74S74N",
+        "mpn_or_sku" => nil,
+        "q" => "",
+        "reference" => "line1",
+        "seller" => nil,
+        "sku" => nil,
+        "start" => 0
+      },
+      %{
+        "__class__" => "PartsMatchQuery",
+        "brand" => nil,
+        "limit" => 3,
+        "mpn" => nil,
+        "mpn_or_sku" => nil,
+        "q" => "",
+        "reference" => "line2",
+        "seller" => nil,
+        "sku" => "67K1122",
+        "start" => 0
+      },
+      %{
+        "__class__" => "PartsMatchQuery",
+        "brand" => nil,
+        "limit" => 3,
+        "mpn" => nil,
+        "mpn_or_sku" => "SN74S74N",
+        "q" => "",
+        "reference" => "line3",
+        "seller" => nil,
+        "sku" => nil,
+        "start" => 0
+      },
+      %{
+        "__class__" => "PartsMatchQuery",
+        "brand" => "Texas Instruments",
+        "limit" => 3,
+        "mpn" => "SN74S74N",
+        "mpn_or_sku" => nil,
+        "q" => "",
+        "reference" => "line4",
+        "seller" => nil,
+        "sku" => nil,
+        "start" => 0
+      }
+    ]
+  },
+  "results" => [
+    %{
+      "__class__" => "PartsMatchResult",
+      "error" => nil,
+      "hits" => 4,
+      "items" => [
+        %{
+          "__class__" => "Part",
+          "brand" => %{
+            "__class__" => "Brand",
+            "homepage_url" => "http://ti.com",
+            "name" => "Texas Instruments",
+            "uid" => "2239e3330e2df5fe"
+          },
+          "manufacturer" => %{
+            "__class__" => "Manufacturer",
+            "homepage_url" => "http://ti.com",
+            "name" => "Texas Instruments",
+            "uid" => "40f985f368ed933e"
+          },
+          "mpn" => "SN74S74N",
+          "octopart_url" => "https://octopart.com/sn74s74n-texas+instruments-54445",
+          "offers" => [
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "459_296-1734-5-ND",
+              "eligible_region" => "",
+              "factory_lead_days" => 49,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 168,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T12:52:45Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.69000"],
+                  [25, "1.43000"],
+                  [100, "1.21840"],
+                  [500, "1.00100"],
+                  [1000, "0.82940"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=01ce0fe&sid=459&ppid=54445&vpid=1600464&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.digikey.com",
+                "id" => "459",
+                "name" => "Digi-Key",
+                "uid" => "2c3be9310496fffc"
+              },
+              "sku" => "296-1734-5-ND"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2402_67K1122_US",
+              "eligible_region" => "US",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 344,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T18:45:51Z",
+              "moq" => 1,
+              "multipack_quantity" => "1",
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "0.55300"],
+                  [10, "0.55300"],
+                  [100, "0.55300"],
+                  [500, "0.55300"],
+                  [1000, "0.55300"],
+                  [2500, "0.55300"],
+                  [5000, "0.55300"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0131a9d&sid=2402&ppid=54445&vpid=3121607&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.newark.com",
+                "id" => "2402",
+                "name" => "Newark",
+                "uid" => "d294179ef2900153"
+              },
+              "sku" => "67K1122"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2628_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 42,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 75,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T23:58:32Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "0.72790"],
+                  [10, "0.72590"],
+                  [25, "0.72390"],
+                  [50, "0.72090"],
+                  [100, "0.71890"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=07fac88&sid=5822&ppid=54445&vpid=17602390&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://avnetexpress.avnet.com",
+                "id" => "2628",
+                "name" => "Avnet",
+                "uid" => "3667f36d1545e5a0"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "11039_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2016,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T02:03:21Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.54000"],
+                  [10, "1.38000"],
+                  [25, "1.28000"],
+                  [100, "1.12000"],
+                  [250, "1.03000"],
+                  [500, "0.86000"],
+                  [750, "0.71000"],
+                  [1000, "0.65000"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0d8110c&sid=27219&ppid=54445&vpid=267023981&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "https://store.ti.com/",
+                "id" => "11039",
+                "name" => "Texas Instruments",
+                "uid" => "0e26cb2c0c5fdde1"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2638_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 13498,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T08:47:08Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "1.05000"],
+                  [25, "0.98000"],
+                  [100, "0.94000"],
+                  [500, "0.90000"],
+                  [1000, "0.85000"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=017e79b&sid=5832&ppid=54445&vpid=182240603&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.rocelec.com/",
+                "id" => "2638",
+                "name" => "Rochester Electronics",
+                "uid" => "76dfb3d555f7a518"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2401_595-SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 512,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-16T19:39:04Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.69000"],
+                  [10, "1.43000"],
+                  [50, "1.43000"],
+                  [100, "1.15000"],
+                  [1000, "0.83000"],
+                  [10000, "0.71500"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=01549b7&sid=2401&ppid=54445&vpid=37770315&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.mouser.com",
+                "id" => "2401",
+                "name" => "Mouser",
+                "uid" => "a5e060ea85e77627"
+              },
+              "sku" => "595-SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3702_1607733_SG",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 344,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T07:16:39Z",
+              "moq" => 1,
+              "multipack_quantity" => "1",
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "SGD" => [
+                  [1, "2.59000"],
+                  [10, "2.19000"],
+                  [100, "1.77000"],
+                  [500, "1.55000"],
+                  [1000, "1.28000"],
+                  [2500, "1.19000"],
+                  [5000, ...],
+                  [...]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0d699d5&sid=11744&ppid=54445&vpid=237181650&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "SG",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.element14.com/",
+                "id" => "3702",
+                "name" => "element14 APAC",
+                "uid" => "7f61ba6b5871aca6"
+              },
+              "sku" => "1607733"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "5347_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 43,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 0,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T07:27:28Z",
+              "moq" => 25,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 25,
+              "packaging" => nil,
+              "prices" => %{
+                "EUR" => [
+                  [25, "1.10790"],
+                  [50, "0.90690"],
+                  [100, "0.83090"],
+                  [150, "0.71190"],
+                  [250, "0.66490"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?c=1&ak=bfec2a00&sig=0b0401e&sid=15544&ppid=54445&vpid=61600010&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "EU",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://avnetexpress.avnet.com/store/em/EMController?storeId=500201&action=home&region=EMEA&catalogId=500201&langId=-1",
+                "id" => "5347",
+                "name" => "Avnet Europe",
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "11923_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-29T18:11:01Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=08ba15b&sid=28115&ppid=54445&vpid=467495077&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => false,
+                "homepage_url" => "https://www.resion.com/",
+                "id" => "11923",
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6886_8250",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 825,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-10T08:11:28Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "EUR" => [[1, "1.00000"], [25, "0.80000"], [100, "0.60000"]],
+                "USD" => [[1, "1.14630"], [25, "0.91700"], [100, ...]]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=09eb377&sid=17765&ppid=54445&vpid=77783484&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "EU",
+                "has_ecommerce" => true,
+                "homepage_url" => nil,
+                ...
+              },
+              "sku" => "8250"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3951_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 426,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T22:19:44Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => "https://octopart.com/rfq/generate?ppid=54445&vpid=52469734",
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[38, "0.65800"], [100, "0.59000"]]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0ae1f2a&sid=13184&ppid=54445&vpid=52469734&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "GB",
+                "has_ecommerce" => true,
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6561_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 9,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-05T16:05:49Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[1, "1.53846"]]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=02dceac&sid=17279&ppid=54445&vpid=74355363&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "CA",
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "12093_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 259,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-13T19:36:03Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=03f5c3a&sid=28295&ppid=54445&vpid=495670658&ct=offers",
+              "seller" => %{"__class__" => "Seller", ...},
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3917_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 727,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T18:30:22Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[...], ...]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0166841&sid=13062&ppid=54445&vpid=44195630&ct=offers",
+              "seller" => %{...},
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4782_1074324",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 7,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T02:08:51Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{"EUR" => [...]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=091b9b1&sid=14587&ppid=54445&vpid=411366139&ct=offers",
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "7527_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 269,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T17:56:43Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "8251_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 50,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-10T14:53:02Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2412_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 1990,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T19:09:53Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2409_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 274,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T10:36:58Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4212_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2516,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T04:13:42Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4025_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 25,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T21:39:57Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => "https://octopart.com/rfq/generate?ppid=54445&vpid=46414645",
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "10079_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 0,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T13:51:07Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "9477_698288",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 43,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-28T15:12:03Z",
+              "moq" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "1532_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 21,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 39,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T19:19:24Z",
+              ...
+            }
+          ],
+          "redirected_uids" => ["00d9c91b2974df1e", "4f568529f3229091",
+           "843f4dbbd9275bf8", "a3556a4c7b247c92"],
+          "uid" => "5ec397c9af088104"
+        },
+        %{
+          "__class__" => "Part",
+          "brand" => %{
+            "__class__" => "Brand",
+            "homepage_url" => nil,
+            "name" => "Signetics",
+            "uid" => "0e4dcf47257ed98a"
+          },
+          "manufacturer" => %{
+            "__class__" => "Manufacturer",
+            "homepage_url" => nil,
+            "name" => "Signetics",
+            "uid" => "46f983f369ca953e"
+          },
+          "mpn" => "SN74S74N",
+          "octopart_url" => "https://octopart.com/sn74s74n-signetics-8097756",
+          "offers" => [
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6561_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 5,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-05T16:05:49Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[1, "1.53846"]]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=07d10b6&sid=17279&ppid=8097756&vpid=421187219&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "CA",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.componentonline.com",
+                "id" => "6561",
+                "name" => "Component Electronics",
+                "uid" => "bfc17acb8f066c06"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "7527_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 5,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T17:56:43Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0b0888e&sid=18729&ppid=8097756&vpid=89259930&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => false,
+                "homepage_url" => "http://www.specialtypartsinc.com/",
+                "id" => "7527",
+                "name" => "SPEC",
+                "uid" => "2712e2181313f4d5"
+              },
+              "sku" => "SN74S74N"
+            }
+          ],
+          "redirected_uids" => [],
+          "uid" => "9cf2558336484335"
+        },
+        %{
+          "__class__" => "Part",
+          "brand" => %{
+            "__class__" => "Brand",
+            "homepage_url" => "http://www.vishay.com/company/brands/siliconix/",
+            "name" => "Vishay Siliconix",
+            "uid" => "659ca4965d80b25b"
+          },
+          "manufacturer" => %{
+            "__class__" => "Manufacturer",
+            "homepage_url" => "http://www.vishay.com/company/brands/siliconix/",
+            "name" => "Vishay Siliconix",
+            "uid" => "6c8da9875091bf4a"
+          },
+          "mpn" => "SN74S74N",
+          "octopart_url" => "https://octopart.com/sn74s74n-vishay+siliconix-75660328",
+          "offers" => [
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3561_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 0,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 10,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T19:03:52Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0dcec8e&sid=11310&ppid=75660328&vpid=273944429&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.nacsemi.com",
+                "id" => "3561",
+                "name" => "NAC Semi",
+                "uid" => "d7281222f3a704ef"
+              },
+              "sku" => "SN74S74N"
+            }
+          ],
+          "redirected_uids" => [],
+          "uid" => "1ae1d76943afc526"
+        }
+      ],
+      "reference" => "line1"
+    },
+    %{
+      "__class__" => "PartsMatchResult",
+      "error" => nil,
+      "hits" => 1,
+      "items" => [
+        %{
+          "__class__" => "Part",
+          "brand" => %{
+            "__class__" => "Brand",
+            "homepage_url" => "http://ti.com",
+            "name" => "Texas Instruments",
+            "uid" => "2239e3330e2df5fe"
+          },
+          "manufacturer" => %{
+            "__class__" => "Manufacturer",
+            "homepage_url" => "http://ti.com",
+            "name" => "Texas Instruments",
+            "uid" => "40f985f368ed933e"
+          },
+          "mpn" => "SN74S74N",
+          "octopart_url" => "https://octopart.com/sn74s74n-texas+instruments-54445",
+          "offers" => [
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "459_296-1734-5-ND",
+              "eligible_region" => "",
+              "factory_lead_days" => 49,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 168,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T12:52:45Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.69000"],
+                  [25, "1.43000"],
+                  [100, "1.21840"],
+                  [500, "1.00100"],
+                  [1000, "0.82940"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=01ce0fe&sid=459&ppid=54445&vpid=1600464&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.digikey.com",
+                "id" => "459",
+                "name" => "Digi-Key",
+                "uid" => "2c3be9310496fffc"
+              },
+              "sku" => "296-1734-5-ND"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2402_67K1122_US",
+              "eligible_region" => "US",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 344,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T18:45:51Z",
+              "moq" => 1,
+              "multipack_quantity" => "1",
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "0.55300"],
+                  [10, "0.55300"],
+                  [100, "0.55300"],
+                  [500, "0.55300"],
+                  [1000, "0.55300"],
+                  [2500, "0.55300"],
+                  [5000, "0.55300"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0131a9d&sid=2402&ppid=54445&vpid=3121607&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.newark.com",
+                "id" => "2402",
+                "name" => "Newark",
+                "uid" => "d294179ef2900153"
+              },
+              "sku" => "67K1122"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2628_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 42,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 75,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T23:58:32Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "0.72790"],
+                  [10, "0.72590"],
+                  [25, "0.72390"],
+                  [50, "0.72090"],
+                  [100, "0.71890"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=07fac88&sid=5822&ppid=54445&vpid=17602390&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://avnetexpress.avnet.com",
+                "id" => "2628",
+                "name" => "Avnet",
+                "uid" => "3667f36d1545e5a0"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "11039_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2016,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T02:03:21Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.54000"],
+                  [10, "1.38000"],
+                  [25, "1.28000"],
+                  [100, "1.12000"],
+                  [250, "1.03000"],
+                  [500, "0.86000"],
+                  [750, "0.71000"],
+                  [1000, "0.65000"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0d8110c&sid=27219&ppid=54445&vpid=267023981&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "https://store.ti.com/",
+                "id" => "11039",
+                "name" => "Texas Instruments",
+                "uid" => "0e26cb2c0c5fdde1"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2638_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 13498,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T08:47:08Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "1.05000"],
+                  [25, "0.98000"],
+                  [100, "0.94000"],
+                  [500, "0.90000"],
+                  [1000, "0.85000"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=017e79b&sid=5832&ppid=54445&vpid=182240603&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.rocelec.com/",
+                "id" => "2638",
+                "name" => "Rochester Electronics",
+                "uid" => "76dfb3d555f7a518"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2401_595-SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 512,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-16T19:39:04Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.69000"],
+                  [10, "1.43000"],
+                  [50, "1.43000"],
+                  [100, "1.15000"],
+                  [1000, "0.83000"],
+                  [10000, "0.71500"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=01549b7&sid=2401&ppid=54445&vpid=37770315&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.mouser.com",
+                "id" => "2401",
+                "name" => "Mouser",
+                "uid" => "a5e060ea85e77627"
+              },
+              "sku" => "595-SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3702_1607733_SG",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 344,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T07:16:39Z",
+              "moq" => 1,
+              "multipack_quantity" => "1",
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "SGD" => [
+                  [1, "2.59000"],
+                  [10, "2.19000"],
+                  [100, "1.77000"],
+                  [500, "1.55000"],
+                  [1000, "1.28000"],
+                  [2500, ...],
+                  [...],
+                  ...
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0d699d5&sid=11744&ppid=54445&vpid=237181650&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "SG",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.element14.com/",
+                "id" => "3702",
+                "name" => "element14 APAC",
+                ...
+              },
+              "sku" => "1607733"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "5347_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 43,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 0,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T07:27:28Z",
+              "moq" => 25,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 25,
+              "packaging" => nil,
+              "prices" => %{
+                "EUR" => [
+                  [25, "1.10790"],
+                  [50, "0.90690"],
+                  [100, "0.83090"],
+                  [150, "0.71190"],
+                  [250, ...]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?c=1&ak=bfec2a00&sig=0b0401e&sid=15544&ppid=54445&vpid=61600010&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "EU",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://avnetexpress.avnet.com/store/em/EMController?storeId=500201&action=home&region=EMEA&catalogId=500201&langId=-1",
+                "id" => "5347",
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "11923_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-29T18:11:01Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=08ba15b&sid=28115&ppid=54445&vpid=467495077&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => false,
+                "homepage_url" => "https://www.resion.com/",
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6886_8250",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 825,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-10T08:11:28Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "EUR" => [[1, "1.00000"], [25, "0.80000"], [100, ...]],
+                "USD" => [[1, "1.14630"], [25, ...], [...]]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=09eb377&sid=17765&ppid=54445&vpid=77783484&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "EU",
+                "has_ecommerce" => true,
+                ...
+              },
+              "sku" => "8250"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3951_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 426,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T22:19:44Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => "https://octopart.com/rfq/generate?ppid=54445&vpid=52469734",
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[38, "0.65800"], [100, ...]]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0ae1f2a&sid=13184&ppid=54445&vpid=52469734&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "GB",
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6561_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 9,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-05T16:05:49Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[1, ...]]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=02dceac&sid=17279&ppid=54445&vpid=74355363&ct=offers",
+              "seller" => %{"__class__" => "Seller", ...},
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "12093_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 259,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-13T19:36:03Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=03f5c3a&sid=28295&ppid=54445&vpid=495670658&ct=offers",
+              "seller" => %{...},
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3917_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 727,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T18:30:22Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{"USD" => [...]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0166841&sid=13062&ppid=54445&vpid=44195630&ct=offers",
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4782_1074324",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 7,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T02:08:51Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{...},
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "8251_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 50,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-10T14:53:02Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "7527_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 269,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T17:56:43Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2412_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 1990,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T19:09:53Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2409_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 274,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T10:36:58Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4212_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2516,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T04:13:42Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "9477_698288",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 43,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-28T15:12:03Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "10079_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 0,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T13:51:07Z",
+              "moq" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4025_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 25,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T21:39:57Z",
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "1532_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 21,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 39,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              ...
+            }
+          ],
+          "redirected_uids" => ["00d9c91b2974df1e", "4f568529f3229091",
+           "843f4dbbd9275bf8", "a3556a4c7b247c92"],
+          "uid" => "5ec397c9af088104"
+        }
+      ],
+      "reference" => "line2"
+    },
+    %{
+      "__class__" => "PartsMatchResult",
+      "error" => nil,
+      "hits" => 4,
+      "items" => [
+        %{
+          "__class__" => "Part",
+          "brand" => %{
+            "__class__" => "Brand",
+            "homepage_url" => "http://ti.com",
+            "name" => "Texas Instruments",
+            "uid" => "2239e3330e2df5fe"
+          },
+          "manufacturer" => %{
+            "__class__" => "Manufacturer",
+            "homepage_url" => "http://ti.com",
+            "name" => "Texas Instruments",
+            "uid" => "40f985f368ed933e"
+          },
+          "mpn" => "SN74S74N",
+          "octopart_url" => "https://octopart.com/sn74s74n-texas+instruments-54445",
+          "offers" => [
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "459_296-1734-5-ND",
+              "eligible_region" => "",
+              "factory_lead_days" => 49,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 168,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T12:52:45Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.69000"],
+                  [25, "1.43000"],
+                  [100, "1.21840"],
+                  [500, "1.00100"],
+                  [1000, "0.82940"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=01ce0fe&sid=459&ppid=54445&vpid=1600464&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.digikey.com",
+                "id" => "459",
+                "name" => "Digi-Key",
+                "uid" => "2c3be9310496fffc"
+              },
+              "sku" => "296-1734-5-ND"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2402_67K1122_US",
+              "eligible_region" => "US",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 344,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T18:45:51Z",
+              "moq" => 1,
+              "multipack_quantity" => "1",
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "0.55300"],
+                  [10, "0.55300"],
+                  [100, "0.55300"],
+                  [500, "0.55300"],
+                  [1000, "0.55300"],
+                  [2500, "0.55300"],
+                  [5000, "0.55300"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0131a9d&sid=2402&ppid=54445&vpid=3121607&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.newark.com",
+                "id" => "2402",
+                "name" => "Newark",
+                "uid" => "d294179ef2900153"
+              },
+              "sku" => "67K1122"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2628_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 42,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 75,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T23:58:32Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "0.72790"],
+                  [10, "0.72590"],
+                  [25, "0.72390"],
+                  [50, "0.72090"],
+                  [100, "0.71890"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=07fac88&sid=5822&ppid=54445&vpid=17602390&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://avnetexpress.avnet.com",
+                "id" => "2628",
+                "name" => "Avnet",
+                "uid" => "3667f36d1545e5a0"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "11039_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2016,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T02:03:21Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.54000"],
+                  [10, "1.38000"],
+                  [25, "1.28000"],
+                  [100, "1.12000"],
+                  [250, "1.03000"],
+                  [500, "0.86000"],
+                  [750, "0.71000"],
+                  [1000, ...]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0d8110c&sid=27219&ppid=54445&vpid=267023981&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "https://store.ti.com/",
+                "id" => "11039",
+                "name" => "Texas Instruments",
+                "uid" => "0e26cb2c0c5fdde1"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2638_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 13498,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T08:47:08Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "1.05000"],
+                  [25, "0.98000"],
+                  [100, "0.94000"],
+                  [500, "0.90000"],
+                  [1000, "0.85000"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=017e79b&sid=5832&ppid=54445&vpid=182240603&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.rocelec.com/",
+                "id" => "2638",
+                "name" => "Rochester Electronics",
+                "uid" => "76dfb3d555f7a518"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2401_595-SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 512,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-16T19:39:04Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.69000"],
+                  [10, "1.43000"],
+                  [50, "1.43000"],
+                  [100, "1.15000"],
+                  [1000, "0.83000"],
+                  [10000, ...]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=01549b7&sid=2401&ppid=54445&vpid=37770315&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.mouser.com",
+                "id" => "2401",
+                "name" => "Mouser",
+                ...
+              },
+              "sku" => "595-SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3702_1607733_SG",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 344,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T07:16:39Z",
+              "moq" => 1,
+              "multipack_quantity" => "1",
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "SGD" => [
+                  [1, "2.59000"],
+                  [10, "2.19000"],
+                  [100, "1.77000"],
+                  [500, "1.55000"],
+                  [1000, ...],
+                  [...],
+                  ...
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0d699d5&sid=11744&ppid=54445&vpid=237181650&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "SG",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.element14.com/",
+                "id" => "3702",
+                ...
+              },
+              "sku" => "1607733"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "5347_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 43,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 0,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T07:27:28Z",
+              "moq" => 25,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 25,
+              "packaging" => nil,
+              "prices" => %{
+                "EUR" => [
+                  [25, "1.10790"],
+                  [50, "0.90690"],
+                  [100, "0.83090"],
+                  [150, ...],
+                  [...]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?c=1&ak=bfec2a00&sig=0b0401e&sid=15544&ppid=54445&vpid=61600010&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "EU",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://avnetexpress.avnet.com/store/em/EMController?storeId=500201&action=home&region=EMEA&catalogId=500201&langId=-1",
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "11923_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-29T18:11:01Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=08ba15b&sid=28115&ppid=54445&vpid=467495077&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => false,
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6886_8250",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 825,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-10T08:11:28Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "EUR" => [[1, "1.00000"], [25, ...], [...]],
+                "USD" => [[1, ...], [...], ...]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=09eb377&sid=17765&ppid=54445&vpid=77783484&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "EU",
+                ...
+              },
+              "sku" => "8250"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3951_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 426,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T22:19:44Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => "https://octopart.com/rfq/generate?ppid=54445&vpid=52469734",
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[38, ...], [...]]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0ae1f2a&sid=13184&ppid=54445&vpid=52469734&ct=offers",
+              "seller" => %{"__class__" => "Seller", ...},
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6561_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 9,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-05T16:05:49Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[...]]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=02dceac&sid=17279&ppid=54445&vpid=74355363&ct=offers",
+              "seller" => %{...},
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "12093_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 259,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-13T19:36:03Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=03f5c3a&sid=28295&ppid=54445&vpid=495670658&ct=offers",
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3917_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 727,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T18:30:22Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{...},
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4782_1074324",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 7,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T02:08:51Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "7527_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 269,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T17:56:43Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "8251_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 50,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-10T14:53:02Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2412_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 1990,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T19:09:53Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2409_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 274,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T10:36:58Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4212_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2516,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T04:13:42Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4025_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 25,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T21:39:57Z",
+              "moq" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "10079_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 0,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T13:51:07Z",
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "9477_698288",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 43,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "1532_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 21,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 39,
+              "is_authorized" => false,
+              ...
+            }
+          ],
+          "redirected_uids" => ["00d9c91b2974df1e", "4f568529f3229091",
+           "843f4dbbd9275bf8", "a3556a4c7b247c92"],
+          "uid" => "5ec397c9af088104"
+        },
+        %{
+          "__class__" => "Part",
+          "brand" => %{
+            "__class__" => "Brand",
+            "homepage_url" => nil,
+            "name" => "Signetics",
+            "uid" => "0e4dcf47257ed98a"
+          },
+          "manufacturer" => %{
+            "__class__" => "Manufacturer",
+            "homepage_url" => nil,
+            "name" => "Signetics",
+            "uid" => "46f983f369ca953e"
+          },
+          "mpn" => "SN74S74N",
+          "octopart_url" => "https://octopart.com/sn74s74n-signetics-8097756",
+          "offers" => [
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6561_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 5,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-05T16:05:49Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[1, "1.53846"]]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=07d10b6&sid=17279&ppid=8097756&vpid=421187219&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "CA",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.componentonline.com",
+                "id" => "6561",
+                "name" => "Component Electronics",
+                "uid" => "bfc17acb8f066c06"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "7527_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 5,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T17:56:43Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0b0888e&sid=18729&ppid=8097756&vpid=89259930&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => false,
+                "homepage_url" => "http://www.specialtypartsinc.com/",
+                "id" => "7527",
+                "name" => "SPEC",
+                "uid" => "2712e2181313f4d5"
+              },
+              "sku" => "SN74S74N"
+            }
+          ],
+          "redirected_uids" => [],
+          "uid" => "9cf2558336484335"
+        },
+        %{
+          "__class__" => "Part",
+          "brand" => %{
+            "__class__" => "Brand",
+            "homepage_url" => "http://www.vishay.com/company/brands/siliconix/",
+            "name" => "Vishay Siliconix",
+            "uid" => "659ca4965d80b25b"
+          },
+          "manufacturer" => %{
+            "__class__" => "Manufacturer",
+            "homepage_url" => "http://www.vishay.com/company/brands/siliconix/",
+            "name" => "Vishay Siliconix",
+            "uid" => "6c8da9875091bf4a"
+          },
+          "mpn" => "SN74S74N",
+          "octopart_url" => "https://octopart.com/sn74s74n-vishay+siliconix-75660328",
+          "offers" => [
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3561_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 0,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 10,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T19:03:52Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0dcec8e&sid=11310&ppid=75660328&vpid=273944429&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.nacsemi.com",
+                "id" => "3561",
+                "name" => "NAC Semi",
+                "uid" => "d7281222f3a704ef"
+              },
+              "sku" => "SN74S74N"
+            }
+          ],
+          "redirected_uids" => [],
+          "uid" => "1ae1d76943afc526"
+        }
+      ],
+      "reference" => "line3"
+    },
+    %{
+      "__class__" => "PartsMatchResult",
+      "error" => nil,
+      "hits" => 1,
+      "items" => [
+        %{
+          "__class__" => "Part",
+          "brand" => %{
+            "__class__" => "Brand",
+            "homepage_url" => "http://ti.com",
+            "name" => "Texas Instruments",
+            "uid" => "2239e3330e2df5fe"
+          },
+          "manufacturer" => %{
+            "__class__" => "Manufacturer",
+            "homepage_url" => "http://ti.com",
+            "name" => "Texas Instruments",
+            "uid" => "40f985f368ed933e"
+          },
+          "mpn" => "SN74S74N",
+          "octopart_url" => "https://octopart.com/sn74s74n-texas+instruments-54445",
+          "offers" => [
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "459_296-1734-5-ND",
+              "eligible_region" => "",
+              "factory_lead_days" => 49,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 168,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T12:52:45Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.69000"],
+                  [25, "1.43000"],
+                  [100, "1.21840"],
+                  [500, "1.00100"],
+                  [1000, "0.82940"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=01ce0fe&sid=459&ppid=54445&vpid=1600464&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.digikey.com",
+                "id" => "459",
+                "name" => "Digi-Key",
+                "uid" => "2c3be9310496fffc"
+              },
+              "sku" => "296-1734-5-ND"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2402_67K1122_US",
+              "eligible_region" => "US",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 344,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T18:45:51Z",
+              "moq" => 1,
+              "multipack_quantity" => "1",
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "0.55300"],
+                  [10, "0.55300"],
+                  [100, "0.55300"],
+                  [500, "0.55300"],
+                  [1000, "0.55300"],
+                  [2500, "0.55300"],
+                  [5000, "0.55300"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0131a9d&sid=2402&ppid=54445&vpid=3121607&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.newark.com",
+                "id" => "2402",
+                "name" => "Newark",
+                "uid" => "d294179ef2900153"
+              },
+              "sku" => "67K1122"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2628_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 42,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 75,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T23:58:32Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "0.72790"],
+                  [10, "0.72590"],
+                  [25, "0.72390"],
+                  [50, "0.72090"],
+                  [100, "0.71890"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=07fac88&sid=5822&ppid=54445&vpid=17602390&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://avnetexpress.avnet.com",
+                "id" => "2628",
+                "name" => "Avnet",
+                "uid" => "3667f36d1545e5a0"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "11039_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2016,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T02:03:21Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.54000"],
+                  [10, "1.38000"],
+                  [25, "1.28000"],
+                  [100, "1.12000"],
+                  [250, "1.03000"],
+                  [500, "0.86000"],
+                  [750, ...],
+                  [...]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0d8110c&sid=27219&ppid=54445&vpid=267023981&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "https://store.ti.com/",
+                "id" => "11039",
+                "name" => "Texas Instruments",
+                "uid" => "0e26cb2c0c5fdde1"
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2638_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 13498,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T08:47:08Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "USD" => [
+                  [1, "1.05000"],
+                  [25, "0.98000"],
+                  [100, "0.94000"],
+                  [500, "0.90000"],
+                  [1000, "0.85000"]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=017e79b&sid=5832&ppid=54445&vpid=182240603&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.rocelec.com/",
+                "id" => "2638",
+                "name" => "Rochester Electronics",
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2401_595-SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 512,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-16T19:39:04Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => "Tube",
+              "prices" => %{
+                "USD" => [
+                  [1, "1.69000"],
+                  [10, "1.43000"],
+                  [50, "1.43000"],
+                  [100, "1.15000"],
+                  [1000, ...],
+                  [...]
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=01549b7&sid=2401&ppid=54445&vpid=37770315&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.mouser.com",
+                "id" => "2401",
+                ...
+              },
+              "sku" => "595-SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3702_1607733_SG",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 344,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T07:16:39Z",
+              "moq" => 1,
+              "multipack_quantity" => "1",
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "SGD" => [
+                  [1, "2.59000"],
+                  [10, "2.19000"],
+                  [100, "1.77000"],
+                  [500, ...],
+                  [...],
+                  ...
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0d699d5&sid=11744&ppid=54445&vpid=237181650&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "SG",
+                "has_ecommerce" => true,
+                "homepage_url" => "http://www.element14.com/",
+                ...
+              },
+              "sku" => "1607733"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "5347_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 43,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 0,
+              "is_authorized" => true,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T07:27:28Z",
+              "moq" => 25,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 25,
+              "packaging" => nil,
+              "prices" => %{
+                "EUR" => [
+                  [25, "1.10790"],
+                  [50, "0.90690"],
+                  [100, ...],
+                  [...],
+                  ...
+                ]
+              },
+              "product_url" => "https://octopart.com/click/track?c=1&ak=bfec2a00&sig=0b0401e&sid=15544&ppid=54445&vpid=61600010&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "EU",
+                "has_ecommerce" => true,
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "11923_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-29T18:11:01Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=08ba15b&sid=28115&ppid=54445&vpid=467495077&ct=offers",
+              "seller" => %{
+                "__class__" => "Seller",
+                "display_flag" => "US",
+                ...
+              },
+              "sku" => "SN74S74N"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6886_8250",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 825,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-08-10T08:11:28Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{
+                "EUR" => [[1, ...], [...], ...],
+                "USD" => [[...], ...]
+              },
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=09eb377&sid=17765&ppid=54445&vpid=77783484&ct=offers",
+              "seller" => %{"__class__" => "Seller", ...},
+              "sku" => "8250"
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3951_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 426,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T22:19:44Z",
+              "moq" => 1,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => "https://octopart.com/rfq/generate?ppid=54445&vpid=52469734",
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => 1,
+              "packaging" => nil,
+              "prices" => %{"USD" => [[...], ...]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0ae1f2a&sid=13184&ppid=54445&vpid=52469734&ct=offers",
+              "seller" => %{...},
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "6561_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 9,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-05T16:05:49Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{"USD" => [...]},
+              "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=02dceac&sid=17279&ppid=54445&vpid=74355363&ct=offers",
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "12093_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 259,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-13T19:36:03Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              "prices" => %{},
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "3917_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 727,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T18:30:22Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              "packaging" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4782_1074324",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 7,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T02:08:51Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              "order_multiple" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "8251_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 50,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-10T14:53:02Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              "on_order_quantity" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "7527_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 269,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-12T17:56:43Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              "on_order_eta" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2412_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 1990,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T19:09:53Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              "octopart_rfq_url" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "2409_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 274,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-17T10:36:58Z",
+              "moq" => nil,
+              "multipack_quantity" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4212_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 2516,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-15T04:13:42Z",
+              "moq" => nil,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "10079_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 0,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              "last_updated" => "2018-09-14T13:51:07Z",
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "4025_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 25,
+              "is_authorized" => false,
+              "is_realtime" => false,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "9477_698288",
+              "eligible_region" => "",
+              "factory_lead_days" => nil,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 43,
+              "is_authorized" => false,
+              ...
+            },
+            %{
+              "__class__" => "PartOffer",
+              "_custom" => %{},
+              "_naive_id" => "1532_SN74S74N",
+              "eligible_region" => "",
+              "factory_lead_days" => 21,
+              "factory_order_multiple" => nil,
+              "in_stock_quantity" => 39,
+              ...
+            }
+          ],
+          "redirected_uids" => ["00d9c91b2974df1e", "4f568529f3229091",
+           "843f4dbbd9275bf8", "a3556a4c7b247c92"],
+          "uid" => "5ec397c9af088104"
+        }
+      ],
+      "reference" => "line4"
+    }
+  ]
+}
+  * test example /parts/match (390.0ms)
+
+14:27:12.013 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.266.0>,#Ref<0.2451773151.210239494.134713>} state=#{count=>2,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+  * test example /parts/uid"http://octopart.com/api/v3/parts/103cdb613d20cffb?apikey=bfec2a00"
+
+
+-------------------------------------------
+: %{
+  "__class__" => "Part",
+  "brand" => %{
+    "__class__" => "Brand",
+    "homepage_url" => "http://www.te.com/",
+    "name" => "TE Connectivity",
+    "uid" => "c4f105fbe7591336"
+  },
+  "manufacturer" => %{
+    "__class__" => "Manufacturer",
+    "homepage_url" => "http://www.te.com/",
+    "name" => "TE Connectivity",
+    "uid" => "b53d7037929566fa"
+  },
+  "mpn" => "206062-1",
+  "octopart_url" => "https://octopart.com/206062-1-te+connectivity-46668526",
+  "offers" => [
+    %{
+      "__class__" => "PartOffer",
+      "_custom" => %{},
+      "_naive_id" => "3152_206062-1",
+      "eligible_region" => "",
+      "factory_lead_days" => nil,
+      "factory_order_multiple" => nil,
+      "in_stock_quantity" => 0,
+      "is_authorized" => true,
+      "is_realtime" => false,
+      "last_updated" => "2018-09-13T00:02:41Z",
+      "moq" => nil,
+      "multipack_quantity" => nil,
+      "octopart_rfq_url" => nil,
+      "on_order_eta" => nil,
+      "on_order_quantity" => nil,
+      "order_multiple" => nil,
+      "packaging" => nil,
+      "prices" => %{},
+      "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0c53fe5&sid=8915&ppid=46668526&vpid=165906826&ct=offers",
+      "seller" => %{
+        "__class__" => "Seller",
+        "display_flag" => "US",
+        "has_ecommerce" => true,
+        "homepage_url" => "http://www.powerandsignal.com",
+        "id" => "3152",
+        "name" => "Power and Signal Group",
+        "uid" => "2e73eb790b45fdb4"
+      },
+      "sku" => "206062-1"
+    },
+    %{
+      "__class__" => "PartOffer",
+      "_custom" => %{},
+      "_naive_id" => "6561_206062-1",
+      "eligible_region" => "",
+      "factory_lead_days" => nil,
+      "factory_order_multiple" => nil,
+      "in_stock_quantity" => 1,
+      "is_authorized" => false,
+      "is_realtime" => false,
+      "last_updated" => "2018-09-05T16:05:49Z",
+      "moq" => nil,
+      "multipack_quantity" => nil,
+      "octopart_rfq_url" => nil,
+      "on_order_eta" => nil,
+      "on_order_quantity" => nil,
+      "order_multiple" => nil,
+      "packaging" => nil,
+      "prices" => %{"USD" => [[1, "3.84615"]]},
+      "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0b44986&sid=17279&ppid=46668526&vpid=158521927&ct=offers",
+      "seller" => %{
+        "__class__" => "Seller",
+        "display_flag" => "CA",
+        "has_ecommerce" => true,
+        "homepage_url" => "http://www.componentonline.com",
+        "id" => "6561",
+        "name" => "Component Electronics",
+        "uid" => "bfc17acb8f066c06"
+      },
+      "sku" => "206062-1"
+    },
+    %{
+      "__class__" => "PartOffer",
+      "_custom" => %{},
+      "_naive_id" => "4293_206062-1",
+      "eligible_region" => "",
+      "factory_lead_days" => nil,
+      "factory_order_multiple" => nil,
+      "in_stock_quantity" => 9,
+      "is_authorized" => false,
+      "is_realtime" => false,
+      "last_updated" => "2018-09-12T14:56:58Z",
+      "moq" => nil,
+      "multipack_quantity" => nil,
+      "octopart_rfq_url" => nil,
+      "on_order_eta" => nil,
+      "on_order_quantity" => nil,
+      "order_multiple" => nil,
+      "packaging" => nil,
+      "prices" => %{},
+      "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=057b03f&sid=13909&ppid=46668526&vpid=166406495&ct=offers",
+      "seller" => %{
+        "__class__" => "Seller",
+        "display_flag" => "US",
+        "has_ecommerce" => false,
+        "homepage_url" => "http://www.nstechnology.com",
+        "id" => "4293",
+        "name" => "NetSource Technology",
+        "uid" => "6d39a833549abefe"
+      },
+      "sku" => "206062-1"
+    },
+    %{
+      "__class__" => "PartOffer",
+      "_custom" => %{},
+      "_naive_id" => "3917_206062-1",
+      "eligible_region" => "",
+      "factory_lead_days" => nil,
+      "factory_order_multiple" => nil,
+      "in_stock_quantity" => 2,
+      "is_authorized" => false,
+      "is_realtime" => false,
+      "last_updated" => "2018-09-12T18:30:22Z",
+      "moq" => nil,
+      "multipack_quantity" => nil,
+      "octopart_rfq_url" => nil,
+      "on_order_eta" => nil,
+      "on_order_quantity" => nil,
+      "order_multiple" => nil,
+      "packaging" => nil,
+      "prices" => %{"USD" => [[1, "1.87720"]]},
+      "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=03edda6&sid=13062&ppid=46668526&vpid=128077910&ct=offers",
+      "seller" => %{
+        "__class__" => "Seller",
+        "display_flag" => "US",
+        "has_ecommerce" => true,
+        "homepage_url" => "http://rcfreelance.com/",
+        "id" => "3917",
+        "name" => "Freelance Electronics",
+        "uid" => "a1fc64f687d7723b"
+      },
+      "sku" => "206062-1"
+    },
+    %{
+      "__class__" => "PartOffer",
+      "_custom" => %{},
+      "_naive_id" => "3561_206062-1",
+      "eligible_region" => "",
+      "factory_lead_days" => 495,
+      "factory_order_multiple" => nil,
+      "in_stock_quantity" => 100,
+      "is_authorized" => false,
+      "is_realtime" => false,
+      "last_updated" => "2018-09-17T19:03:52Z",
+      "moq" => 1,
+      "multipack_quantity" => nil,
+      "octopart_rfq_url" => nil,
+      "on_order_eta" => nil,
+      "on_order_quantity" => nil,
+      "order_multiple" => 1,
+      "packaging" => nil,
+      "prices" => %{},
+      "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=022769b&sid=11310&ppid=46668526&vpid=476459695&ct=offers",
+      "seller" => %{
+        "__class__" => "Seller",
+        "display_flag" => "US",
+        "has_ecommerce" => true,
+        "homepage_url" => "http://www.nacsemi.com",
+        "id" => "3561",
+        "name" => "NAC Semi",
+        "uid" => "d7281222f3a704ef"
+      },
+      "sku" => "206062-1"
+    },
+    %{
+      "__class__" => "PartOffer",
+      "_custom" => %{},
+      "_naive_id" => "2412_206062-1",
+      "eligible_region" => "",
+      "factory_lead_days" => nil,
+      "factory_order_multiple" => nil,
+      "in_stock_quantity" => 1,
+      "is_authorized" => false,
+      "is_realtime" => false,
+      "last_updated" => "2018-09-17T19:09:53Z",
+      "moq" => nil,
+      "multipack_quantity" => nil,
+      "octopart_rfq_url" => nil,
+      "on_order_eta" => nil,
+      "on_order_quantity" => nil,
+      "order_multiple" => nil,
+      "packaging" => nil,
+      "prices" => %{"USD" => [[1, "3.75000"]]},
+      "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=061e9c1&sid=2412&ppid=46668526&vpid=176280934&ct=offers",
+      "seller" => %{
+        "__class__" => "Seller",
+        "display_flag" => "US",
+        "has_ecommerce" => true,
+        "homepage_url" => "http://www.questcomp.com",
+        "id" => "2412",
+        "name" => "Quest",
+        "uid" => "b29977939293615e"
+      },
+      "sku" => "206062-1"
+    },
+    %{
+      "__class__" => "PartOffer",
+      "_custom" => %{},
+      "_naive_id" => "2409_206062-1",
+      "eligible_region" => "",
+      "factory_lead_days" => nil,
+      "factory_order_multiple" => nil,
+      "in_stock_quantity" => 2,
+      "is_authorized" => false,
+      "is_realtime" => false,
+      "last_updated" => "2018-09-17T10:36:58Z",
+      "moq" => nil,
+      "multipack_quantity" => nil,
+      "octopart_rfq_url" => nil,
+      "on_order_eta" => nil,
+      "on_order_quantity" => nil,
+      "order_multiple" => nil,
+      "packaging" => nil,
+      "prices" => %{},
+      "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=0548aac&sid=2409&ppid=46668526&vpid=260645807&ct=offers",
+      "seller" => %{
+        "__class__" => "Seller",
+        "display_flag" => "US",
+        "has_ecommerce" => true,
+        "homepage_url" => "http://www.gerberelec.com",
+        "id" => "2409",
+        "name" => "Gerber",
+        "uid" => "e145244fc14a3282"
+      },
+      "sku" => "206062-1"
+    },
+    %{
+      "__class__" => "PartOffer",
+      "_custom" => %{},
+      "_naive_id" => "10079_206062-1",
+      "eligible_region" => "",
+      "factory_lead_days" => nil,
+      "factory_order_multiple" => nil,
+      "in_stock_quantity" => 0,
+      "is_authorized" => false,
+      "is_realtime" => false,
+      "last_updated" => "2018-09-14T13:51:07Z",
+      "moq" => nil,
+      "multipack_quantity" => nil,
+      "octopart_rfq_url" => nil,
+      "on_order_eta" => nil,
+      "on_order_quantity" => nil,
+      "order_multiple" => nil,
+      "packaging" => nil,
+      "prices" => %{},
+      "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=02f9433&sid=25917&ppid=46668526&vpid=195702226&ct=offers",
+      "seller" => %{
+        "__class__" => "Seller",
+        "display_flag" => "US",
+        "has_ecommerce" => false,
+        "homepage_url" => "http://www.abacuselect.com/",
+        "id" => "10079",
+        "name" => "Abacus Technologies",
+        "uid" => "ab926e98a5ab7855"
+      },
+      "sku" => "206062-1"
+    },
+    %{
+      "__class__" => "PartOffer",
+      "_custom" => %{},
+      "_naive_id" => "4025_206062-1",
+      "eligible_region" => "",
+      "factory_lead_days" => nil,
+      "factory_order_multiple" => nil,
+      "in_stock_quantity" => 3,
+      "is_authorized" => false,
+      "is_realtime" => false,
+      "last_updated" => "2018-09-14T21:39:57Z",
+      "moq" => nil,
+      "multipack_quantity" => nil,
+      "octopart_rfq_url" => "https://octopart.com/rfq/generate?ppid=46668526&vpid=137936105",
+      "on_order_eta" => nil,
+      "on_order_quantity" => nil,
+      "order_multiple" => nil,
+      "packaging" => nil,
+      "prices" => %{},
+      "product_url" => "https://octopart.com/click/track?ak=bfec2a00&sig=08e446f&sid=13388&ppid=46668526&vpid=137936105&ct=offers",
+      "seller" => %{
+        "__class__" => "Seller",
+        "display_flag" => "US",
+        "has_ecommerce" => false,
+        "homepage_url" => "http://www.4starelectronics.com/?utm_source=octopart&utm_medium=inventory&utm_campaign=Octopart",
+        "id" => "4025",
+        "name" => "4 Star Electronics",
+        "uid" => "99755c7fbfaa4ab2"
+      },
+      "sku" => "206062-1"
+    }
+  ],
+  "redirected_uids" => ["103cdb613d20cffb", "21adea61df94fe6a",
+   "6d83a643be72b244", "82bc4bb6a7db5d7b", "eac6207ddf823501"],
+  "uid" => "bd4d768f82c5628a"
+}
+  * test example /parts/uid (187.0ms)
+  * test example /brands/uid
+14:27:12.197 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.267.0>,#Ref<0.2451773151.210239494.134760>} state=#{count=>3,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/brands/2239e3330e2df5fe?apikey=bfec2a00"
+
+
+-------------------------------------------
+: %{
+  "__class__" => "Brand",
+  "homepage_url" => "http://ti.com",
+  "name" => "Texas Instruments",
+  "uid" => "2239e3330e2df5fe"
+}
+  * test example /brands/uid (1451.0ms)
+  * test example /brands/get_multi
+14:27:13.651 module=OctopartApi.RateServer line=51 [debug] handle_call: req: get from: {<0.268.0>,#Ref<0.2451773151.210239494.134808>} state=#{count=>0,current=>nil,max_count=>3,que=>[],retry=>0,time=>1000}
+"http://octopart.com/api/v3/brands/get_multi?apikey=bfec2a00&uid[]=2239e3330e2df5fe&uid[]=c4f105fbe7591336"
+
+
+-------------------------------------------
+: %{
+  "2239e3330e2df5fe" => %{
+    "__class__" => "Brand",
+    "homepage_url" => "http://ti.com",
+    "name" => "Texas Instruments",
+    "uid" => "2239e3330e2df5fe"
+  },
+  "c4f105fbe7591336" => %{
+    "__class__" => "Brand",
+    "homepage_url" => "http://www.te.com/",
+    "name" => "TE Connectivity",
+    "uid" => "c4f105fbe7591336"
+  }
+}
+  * test example /brands/get_multi (109.0ms)
+
+OctopartApiTest
+  * test greets the world  * test greets the world (16.0ms)
+
+  1) test greets the world (OctopartApiTest)
+     test/octopart_api_test.exs:5
+     ** (UndefinedFunctionError) function OctopartApi.hello/0 is undefined or private
+     code: assert OctopartApi.hello() == :world
+     stacktrace:
+       (octopart_api) OctopartApi.hello()
+       test/octopart_api_test.exs:6: (test)
+
+
+
+Finished in 6.5 seconds
+14 tests, 1 failure
+
+Randomized with seed 223000

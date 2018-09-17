@@ -52,19 +52,10 @@ defmodule OctopartApi do
   """
 
   # third party
-  # @require UriQuery
   require HTTPoison
   require Poison
 
-  # ours
-  # require OctopartApi.Endpoints.Brands
-  # alias OctopartApi.Endpoints.Brands
-
   @root_category "8a1e4714bb3951d9"
-
-  def hello() do
-    :world
-  end
 
   #############################################################################
   # URL arguments
@@ -99,7 +90,7 @@ defmodule OctopartApi do
   """
   @spec limit(String.t(), integer) :: String.t()
   def limit(q, v) when is_integer(v) do
-    q <> "&limit=" <> URI.encode(v)
+    q <> "&limit=" <> to_string(v)
   end
 
   @doc ~S"""
@@ -132,7 +123,7 @@ defmodule OctopartApi do
   """
   @spec facet_fields_include(String.t(), String.t(), boolean) :: String.t()
   def facet_fields_include(q, f, v \\ false) when is_binary(f) and is_boolean(v) do
-    q <> "&facet[fields][" <> URI.encode(f) <> "[include]=" <> URI.encode(v)
+    q <> "&facet[fields][" <> URI.encode(f) <> "][include]=" <> to_string(v)
   end
 
   @doc ~S"""
@@ -140,7 +131,7 @@ defmodule OctopartApi do
   """
   @spec facet_fields_exclude_filter(String.t(), String.t(), boolean) :: String.t()
   def facet_fields_exclude_filter(q, f, v \\ false) when is_binary(f) and is_boolean(v) do
-    q <> "&facet[fields][" <> URI.encode(f) <> "[exclude_filter]=" <> URI.encode(v)
+    q <> "&facet[fields][" <> URI.encode(f) <> "][exclude_filter]=" <> to_string(v)
   end
 
   @doc ~S"""
@@ -148,9 +139,7 @@ defmodule OctopartApi do
   """
   @spec facet_fields_start(String.t(), String.t(), integer) :: String.t()
   def facet_fields_start(q, f, v \\ 0) when is_binary(f) and is_integer(v) do
-    if is_integer(v),
-      do: q <> "&facet[fields][" <> URI.encode(f) <> "[start]=" <> URI.encode(v),
-      else: throw("Expected integer")
+    q <> "&facet[fields][" <> URI.encode(f) <> "][start]=" <> to_string(v)
   end
 
   @doc ~S"""
@@ -158,9 +147,7 @@ defmodule OctopartApi do
   """
   @spec facet_fields_limit(String.t(), String.t(), integer) :: String.t()
   def facet_fields_limit(q, f, v \\ 10) when is_binary(f) and is_integer(v) do
-    if is_integer(v),
-      do: q <> "&facet[fields][" <> URI.encode(f) <> "[limit]=" <> URI.encode(v),
-      else: throw("Expected integer")
+    q <> "&facet[fields][" <> URI.encode(f) <> "][limit]=" <> to_string(v)
   end
 
   @doc ~S"""
@@ -176,7 +163,39 @@ defmodule OctopartApi do
   """
   @spec stats_include(String.t(), String.t(), boolean) :: String.t()
   def stats_include(q, f, v \\ false) when is_binary(f) and is_boolean(v) do
-    q <> "stats[" <> URI.encode(f) <> "][include]=" <> URI.encode(v)
+    q <> "&stats[" <> URI.encode(f) <> "][include]=" <> to_string(v)
+  end
+
+  @doc ~S"""
+    Append to query: ``` &uid[]="" ```
+  """
+  @spec uid(String.t(), String.t()) :: String.t()
+  def uid(q, b) when is_binary(b) do
+    q <> "&uid[]=" <> URI.encode(b)
+  end
+
+  @doc ~S"""
+    Append to query: ``` &uid[]="" ```
+  """
+  @spec uid(String.t(), List.t()) :: String.t()
+  def uid(q, l) when is_list(l) do
+    List.foldl(l, q, fn b, acc -> acc <> "&uid[]=" <> URI.encode(b) end)
+  end
+
+  @doc ~S"""
+    Append to query: ``` &exact_only ```
+  """
+  @spec exact_only(String.t()) :: String.t()
+  def exact_only(q) do
+    q <> "&exact_only"
+  end
+
+  @doc ~S"""
+    Append to query: ``` &uid[]="" ```
+  """
+  @spec queries(String.t(), List.t()) :: String.t()
+  def queries(q, l) when is_list(l) do
+    q <> "&queries=" <> URI.encode(Poison.encode!(l))
   end
 
   @doc ~S"""
@@ -184,7 +203,31 @@ defmodule OctopartApi do
   """
   @spec stats_exclude_filter(String.t(), String.t(), boolean) :: String.t()
   def stats_exclude_filter(q, f, v \\ false) when is_binary(f) and is_boolean(v) do
-    q <> "stats[" <> URI.encode(f) <> "][exclude_filter]=" <> URI.encode(v)
+    q <> "stats[" <> URI.encode(f) <> "][exclude_filter]=" <> to_string(v)
+  end
+
+  @doc ~S"""
+    Append to query: ``` &spec_drilldown[include]="" ```
+  """
+  @spec spec_drilldown_include(String.t(), boolean) :: String.t()
+  def spec_drilldown_include(q, v \\ false) when is_boolean(v) do
+    q <> "&spec_drilldown[include]=" <> to_string(v)
+  end
+
+  @doc ~S"""
+    Append to query: ``` &spec_drilldown[exclude_filter]="" ```
+  """
+  @spec spec_drilldown_exclude_filter(String.t(), boolean) :: String.t()
+  def spec_drilldown_exclude_filter(q, v \\ false) when is_boolean(v) do
+    q <> "&spec_drilldown[exclude_filter]=" <> to_string(v)
+  end
+
+  @doc ~S"""
+    Append to query: ``` &spec_drilldown[limit]=10 ```
+  """
+  @spec spec_drilldown_limit(String.t(), integer) :: String.t()
+  def spec_drilldown_limit(q, v \\ 10) when is_integer(v) do
+    q <> "&spec_drilldown[limit]=" <> to_string(v)
   end
 
   #############################################################################
@@ -202,7 +245,7 @@ defmodule OctopartApi do
   def brands_get_multi(), do: mk_url("/brands/get_multi")
 
   def categories_uid(uid), do: mk_url("/categories/" <> uid)
-  def categories_search(), do: mk_url("/categoriescategories/search")
+  def categories_search(), do: mk_url("/categories/search")
   def categories_get_multi(), do: mk_url("/categories/get_multi")
 
   def parts_uid(uid), do: mk_url("/parts/" <> uid)
@@ -217,18 +260,7 @@ defmodule OctopartApi do
   def get(req) do
     {:ok, rsp} = OctopartApi.RateServer.get(req)
     {:ok, json} = Poison.decode(rsp.body)
-    #  IO.inspect(json)
+    IO.inspect(req)
     json
-  end
-
-  def x() do
-    rsp =
-      get(
-        parts_search()
-        |> q("solid state relay")
-        |> filter_fields("brand.name", "Texas Instruments")
-        |> filter_fields("offers.seller.name", "Digi-Key")
-        |> start(0)
-      )
   end
 end

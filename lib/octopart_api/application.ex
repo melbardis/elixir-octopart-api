@@ -1,3 +1,7 @@
+#
+# Copyright (c) 2018 by Eric Melbardis @ Wyldewoods LLC.. All Rights Reserved.
+#
+
 defmodule OctopartApi.Application do
   # See https://hexdocs.pm/elixir/Application.html
   # for more information on OTP Applications

@@ -1,3 +1,7 @@
+#
+# Copyright (c) 2018 by Eric Melbardis @ Wyldewoods LLC.. All Rights Reserved.
+#
+
 defmodule OctopartApiExamples do
   use ExUnit.Case
   doctest OctopartApi

@@ -4,7 +4,6 @@ Elixir client for the Octopart API.
 
 In development!
 
-When release version number will be 3.x.y.
 
 ## OctopartApi Documentation
 
@@ -28,6 +27,14 @@ def deps do
   ]
 end
 ```
+## Before User
+
+1) register with octopart.com and obtain an api key. This is required to gain access to their database.
+Note: access is rate limited to 3 requests/second. Money can overcome this limitation.
+2) define an environment variable "OCTOPART_APIKEY=<your api key from step 1>"
+
+
+
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can

@@ -14,7 +14,6 @@ defmodule OctopartApi.RateServer do
 
   # Initialization
   def start_link(opts \\ []) do
-    Logger.debug("start_link")
     GenServer.start_link(__MODULE__, opts, name: __MODULE__)
   end
 
@@ -65,7 +64,6 @@ defmodule OctopartApi.RateServer do
   end
 
   def handle_info({:timeout, _}, state) do
-    # Logger.debug("handle_info: :timeout")
     new_state = doRequest(state)
     Process.send_after(self(), {:timeout, []}, state[:time])
     {:noreply, %{new_state | count: 0}}
@@ -83,8 +81,7 @@ defmodule OctopartApi.RateServer do
   end
 
   defp doRequest(%{count: count, max_count: max_count, que: que} = state) do
-    # wait time timeout event
-    # Logger.debug(:io_lib.format("que maybe full ~w", [state]))
+    # wait time timeout event, we have reached our limit
     state
   end
 end

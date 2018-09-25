@@ -19,7 +19,6 @@ defmodule OctopartApi do
   ## URL arguments
 
     The API query string is build using an Elixir pipeline. For example:
-
   ```
   rsp =
     get(
@@ -29,27 +28,7 @@ defmodule OctopartApi do
       |> filter_fields("offers.seller.name", "Digi-Key")
       |> start(0)
     )
-
     ```
-
-    The following table lists functions used to generate each specific URL argument.
-    Not all arguments apply to all endpoints, check the Octopart API docs on where to use.
-
-   URL Argument |    Function
-   ------------------------------ | -----------------
-   `callback=""` | ```callback("name of callback function to wrap the result") ```
-   `q=""` | ``` q("full text query string") ```
-   `start=0` | ``` start("Orinal pos of first result, min 0, max 1000") ```
-   `limit=10` | ``` limit("number results to return. default 10, max 100" ) ```
-   `sortby="score desc"` | ``` sortby("Attribute (fieldname/fieldvalue) pair to filter results on") ```
-   `filter[fields][<fieldname>][]=""` | ``` filter_fields("field-name", "string") ```
-   `filter[queries][]=""` | ``` filter_queries("string") ```
-   `facet[fields][<fieldname>][include]=false` | ``` facet_fields_include( "fieldname", boolean) ```
-   `facet[fields][<fieldname>][exclude_filter]=false` | ``` facet_fields_exclude_filter( "fieldname", boolean) ```
-   `facet[fields][<fieldname>][start]=0` | ``` facet_fields_start( "fieldname", integer 0...1000) ```
-   `facet[fields][<fieldname>][limit]=10` | ``` facet_fields_limit( "fieldname", integer 10...100) ```
-   `stats[<fieldname>][include]=false` | ``` stats_include( "fieldname", boolean ) ```
-   `stats[<fieldname>][exclude_filter]=false` | ``` stats_exclude_filter( "fieldname", boolean ) ```
 
 
 
